@@ -9,7 +9,7 @@ const rightIds = locationPairs.map(([, rightId]) => +rightId).sort();
 
 let sum = 0;
 
-leftIds.forEach((element, i) => {
+leftIds.forEach((_element, i) => {
   sum += Math.abs(leftIds[i] - rightIds[i]);
 });
 
